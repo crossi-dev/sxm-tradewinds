@@ -30,6 +30,9 @@ nav.main>a:not(.nav-btn):hover{color:var(--blue)}
 .lang{display:flex;gap:4px;margin-left:8px}
 .lang a{font-size:12px;font-weight:600;padding:6px 9px;border-radius:999px;text-decoration:none;color:var(--blue)}
 .lang a[aria-current]{background:var(--blue);color:#fff}
+.drawer .lang{margin:14px 0 0;justify-content:center}
+.drawer .lang a{padding:8px 14px;font-size:14px;border-bottom:0;color:var(--blue)}
+.drawer .lang a[aria-current]{color:#fff}
 .nav-btn{font-size:14px;font-weight:600;padding:11px 18px;border-radius:4px;background:var(--blue);color:#fff!important;text-decoration:none}
 .nav-btn:hover{background:var(--blue-dark)}
 .burger{display:none;width:44px;height:44px;border:0;background:transparent;align-items:center;justify-content:center;cursor:pointer}
