@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact us · Tradewinds, Simpson Bay</title>
+<meta name="description" content="Contact Tradewinds Apartments in Simpson Bay, St. Maarten: send us your travel dates by WhatsApp, email or phone.">
+<meta property="og:title" content="Tradewinds Apartments · Simpson Bay">
+<meta property="og:description" content="Sea-front apartments in the heart of Simpson Bay, St. Maarten.">
+<meta property="og:image" content="https://www.sxm-tradewinds.com/img/hero-deck-sunset.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.sxm-tradewinds.com/contact.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://www.sxm-tradewinds.com/contact.html">
+<link rel="icon" href="img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="img/logo-mark.svg" alt="" width="395" height="275"><span><b>TRADEWINDS</b><small>Simpson Bay</small></span></a>
+    <nav class="main" aria-label="Main">
+      <a href="index.html#property">The property</a>
+      <a href="apartments.html">Apartments</a>
+      <a href="index.html#location">Location</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html" aria-current="page">Contact us</a>
+      <a class="nav-btn" href="index.html#contact">Book now</a>
+    </nav>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#21211F" stroke-width="1.8" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+  </div>
+  <nav class="drawer" id="drawer" aria-label="Mobile">
+    <a href="index.html#property">The property</a>
+    <a href="apartments.html">Apartments</a>
+    <a href="index.html#location">Location</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="contact.html">Contact us</a>
+    <a class="nav-btn" href="index.html#contact">Book now</a>
+  </nav>
+</header>
+
+<main>
+<section class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Contact us</span>
+    <h1>Send us your dates.</h1>
+    <p>Please include your travel dates and any special needs so we can process your reservation as quickly as possible.</p>
+  </div>
+</section>
+
+<section class="contact-page">
+  <div class="wrap cols2">
+    <form class="form" id="contact-form">
+      <label for="f-name">Name</label>
+      <input id="f-name" name="name" type="text" autocomplete="name" maxlength="100" required>
+      <label for="f-email">Email</label>
+      <input id="f-email" name="email" type="email" autocomplete="email" maxlength="250" required>
+      <label for="f-subject">Subject</label>
+      <input id="f-subject" name="subject" type="text">
+      <label for="f-message">Message</label>
+      <textarea id="f-message" name="message" rows="6" required placeholder="Type your message here... Please include your travel dates and all special needs."></textarea>
+      <div class="cta">
+        <button class="btn btn-primary" type="submit" value="whatsapp">Send by WhatsApp</button>
+        <button class="btn btn-outline" type="submit" value="email">Send by email</button>
+      </div>
+      <p class="note">Your message opens in WhatsApp or in your email app, ready to send.</p>
+    </form>
+    <div class="direct">
+      <h2>Or reach us directly</h2>
+      <p><strong>WhatsApp</strong><br><a href="https://wa.me/590690771282?text=Hi%20Tradewinds!%20I%27d%20like%20to%20ask%20about%20availability." target="_blank" rel="noopener">+590 690 77 12 82</a></p>
+      <p><strong>Phone</strong><br><a href="tel:+590690771282">+590 690 77 12 82</a></p>
+      <p><strong>Email</strong><br><a href="mailto:sxmtradewinds@gmail.com">sxmtradewinds@gmail.com</a></p>
+      <p><strong>Address</strong><br>23 Simpson Bay Road, Simpson Bay, Sint Maarten<br><a href="https://maps.app.goo.gl/qw9aWmH8LFHjQ9TA6" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span style="display:flex;align-items:center;gap:10px"><img src="img/logo-mark.svg" alt="" style="height:30px;width:auto;filter:brightness(0) invert(1);opacity:.85">© 2026 Tradewinds Apartments · 23 Simpson Bay Road · <a href="tel:+590690771282">+590 690 77 12 82</a></span>
+    <nav aria-label="Footer">
+      <a href="contact.html">Contact us</a>
+      <a href="https://www.instagram.com/tradewinds.apartments/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/sxmtradewinds/" target="_blank" rel="noopener">Facebook</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.querySelector('.burger'),d=document.getElementById('drawer');
+  function set(o){d.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu')}
+  b.addEventListener('click',function(){set(!d.classList.contains('open'))});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')set(false)});
+  d.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){set(false)})});
+})();
+</script>
+<script>
+document.getElementById('contact-form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target,v=function(n){return f.elements[n].value.trim()};
+  var text='Name: '+v('name')+'
+Email: '+v('email')+(v('subject')?'
+Subject: '+v('subject'):'')+'
+
+'+v('message');
+  if(e.submitter&&e.submitter.value==='email'){
+    location.href='mailto:sxmtradewinds@gmail.com?subject='+encodeURIComponent(v('subject')||'Enquiry from the website')+'&body='+encodeURIComponent(text);
+  }else{
+    window.open('https://wa.me/590690771282?text='+encodeURIComponent(text),'_blank','noopener');
+  }
+});
+</script>
+</body>
+</html>
